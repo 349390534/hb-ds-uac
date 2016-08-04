@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Howbuy Click</title>
+    <style>
+        #container{
+            border:1px solid red;
+            width:350px;
+            height:200px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div>
+        <a href="http://testhowbuy.com:8080/uac/test.html" tag="1111"  target="_blank">第一个</a><br><br><br><br>
+    </div>
+</div>
+
+
+    <a href="http://testhowbuy.com:8080/uac/test2.html" tag="2222"  target="_blank">第二个</a><br><br><br><br>
+    <a href="http://testhowbuy.com:8080/uac/test3.html" tag="3333"  target="_blank">第三个</a><br><br><br><br>
+   
+    <input type="hidden" id="pageid" value="50002"/>
+    <input type="hidden" id="pagelevel" value="2"/>
+    <input type="hidden" id="proid" value="2"/>
+</body>
+<script src="./js/jquery.js"></script>
+<script src="./js/ha.js"></script>
+<script>
+    var pageTracker = _gat._getTracker("UA-3291121-1");
+    pageTracker._initData();
+    pageTracker._setDomainName("howbuy.com");
+    pageTracker._addIgnoredRef("howbuy.com");
+    pageTracker._trackPageview(location.pathname + decodeURI(location.search));
+    $("#pageid").val();
+    $("#pagelevel").val();
+    $("#proid").val();
+    var showPages = function(){
+        //window.open("http://www.baidu.com");
+		window.open("http://localhost:8080/howbuy-uac");
+    };
+</script>
+</html>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+
+	<bean id="runMode" class="com.howbuy.uac.collection.bean.RunMode">
+		<property name="debug" value="false" />
+	</bean>
+
+	<bean id="log4jInitialization"
+		class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
+		<property name="targetClass" value="org.springframework.util.Log4jConfigurer" />
+		<property name="targetMethod" value="initLogging" />
+		<property name="arguments">
+			<list>
+				<value>classpath:log4j.properties</value>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="web.propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>classpath*:messages_zh_CN.properties</value>
+				<value>classpath*:uac.properties</value>
+				<value>classpath:website.properties</value>
+			</list>
+		</property>
+	</bean>
+
+	<!--<bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver"> -->
+	<!--<property name="exceptionMappings"> -->
+	<!--<props> -->
+	<!--<prop rowKey="java.lang.Exception">../error/error.jsp</prop> -->
+	<!--</props> -->
+	<!--</property> -->
+	<!--</bean> -->
+
+	<bean id="springContextHolder" class="com.howbuy.hadoop.utils.SpringContextHolder" />
+
+	<!--<bean rowKey="taskExecutor" class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor"> -->
+	<!--&lt;!&ndash; 线程池活跃的线程数 &ndash;&gt; -->
+	<!--<property name="corePoolSize" value="5" /> -->
+	<!--&lt;!&ndash; 线程池最大活跃的线程数 &ndash;&gt; -->
+	<!--<property name="maxPoolSize" value="10" /> -->
+	<!--&lt;!&ndash; 队列的最大容量 &ndash;&gt; -->
+	<!--<property name="queueCapacity" value="25" /> -->
+	<!--</bean> -->
+	<!--<bean rowKey="taskExecutorExample" class="powercn.TaskExecutorExample"> -->
+	<!--<constructor-arg ref="taskExecutor" /> -->
+	<!--</bean> -->
+
+</beans>

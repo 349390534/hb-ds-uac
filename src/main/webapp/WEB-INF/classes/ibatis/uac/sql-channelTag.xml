@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd" >
+<sqlMap namespace="ChannelTag">
+
+    <typeAlias alias="channelTag" type="com.howbuy.uac.rdb.persistence.ChannelTag"/>
+    
+    
+    <!--获取所有0级tag-->
+    <select id="selectAllChannelTag" parameterClass="java.util.Map" resultClass="channelTag">
+        select t.tag_name tagName,t.tag_code tagCode from zero_channel_tag t
+    </select>
+    
+    
+    <resultMap class="java.util.HashMap" id="channelMap">
+    	<result property="tagName" column="tagName"  javaType="java.lang.String"/>  
+        <result property="tagCode" column="tagCode" javaType="java.lang.String"/>  
+    </resultMap>
+    <!-- 获取所有0级tag，map返回 -->
+    <select id="selectAllMap" parameterClass="java.util.Map" resultMap ="channelMap">
+        select t.tag_name tagName,t.tag_code tagCode from zero_channel_tag t
+    </select>
+</sqlMap>

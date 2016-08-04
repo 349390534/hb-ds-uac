@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<!--  定时任务Bean[系统自动生成] -->
+<beans>
+
+    <bean id="kafka_topics" class="com.howbuy.uac.collection.kafka.KafkaProp">
+    	<property name="webpvtopic" value="topic_webpv"/>
+    	<property name="webeventtopic" value="topic_webevent"/>
+    	<property name="webclicktopic" value="topic_webclick"/>
+    	<property name="apppvtopic" value="topic_apppv"/>
+    	<property name="appeventtopic" value="topic_appevent"/>
+    	<property name="appclicktopic" value="topic_appclick"/>
+    	<property name="appactivatetopic" value="topic_appactivate"/>
+    	<property name="dataappeventtopic" value="data_app_event"></property>
+    	<property name="dataappeventgroup" value="group_appevent"></property>
+    	<property name="h5pv" value="topic_h5pv"></property>
+    	<property name="broker" value="10.40.40.47:9092,10.40.40.61:9092"></property>
+    	<property name="zookeeperlist" value="10.70.70.27:2181,10.70.70.28:2181"></property>
+    </bean>
+    
+    
+<!--     request  queue -->
+    <bean id="queueScaner" class="com.howbuy.uac.collection.queue.QueueBuff" init-method="init">
+    	<property name="kafkaProp" ref="kafka_topics"></property>
+    </bean>
+    
+</beans>

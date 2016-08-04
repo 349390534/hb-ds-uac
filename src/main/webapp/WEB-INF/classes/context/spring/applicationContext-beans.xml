@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<!--  定时任务Bean[系统自动生成] -->
+<beans>
+
+    <!-- bean id="hConnection" class="com.howbuy.hadoop.hbase.orm.connection.HConnection">
+        <constructor-arg index="0" value="10"/>
+    </bean-->
+    
+    <!-- bean id="userInfoDao" class="com.howbuy.uac.collection.dao.UserInfoDao">
+        <property name="hConnection" ref="hConnection"/>
+    </bean-->
+
+    <!-- bean id="userActionDao" class="com.howbuy.uac.collection.dao.UserActionDao">
+        <property name="hConnection" ref="hConnection"/>
+    </bean-->
+    
+    <!-- bean id="pageviewDao" class="com.howbuy.uac.collection.dao.PageViewDao">
+    	<property name="hConnection" ref="hConnection"/>
+    </bean-->
+    
+    <!-- bean id="landPageviewDao" class="com.howbuy.uac.collection.dao.LandingPageViewDao" >
+    	<property name="hConnection" ref="hConnection"/>
+    </bean-->
+    
+    <!-- bean id="hotClickDao" class="com.howbuy.uac.collection.dao.HotClickDao">
+    	<property name="hConnection" ref="hConnection"/>
+    </bean-->
+    
+    <bean id="channeltagrdbDao" class="com.howbuy.uac.rdb.dao.ChannelTagrdbDao">
+    	<property name="sqlMapClient" ref="sqlMapClient"></property>
+    </bean>
+    
+    <!-- 0级tag -->
+    <bean id="channeltagrdbService" class="com.howbuy.uac.rdb.service.ChannelTagrdbService" init-method="init">
+    	<property name="tagDao" ref="channeltagrdbDao"/>
+    </bean>
+    
+      <!--reload url mappings -->
+    <bean id="mappingReader" class="com.howbuy.hadoop.mapping.MappingReader" init-method="reload">
+         <property name="urlChannel" value="${url_channel}"/>
+    </bean>
+    
+    
+</beans>

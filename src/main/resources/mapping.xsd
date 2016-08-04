@@ -1,0 +1,31 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="groups">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="group" maxOccurs="unbounded" minOccurs="1">
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="group">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element type="xs:string" name="pathKey" maxOccurs="1" minOccurs="0"/>
+                <xs:element type="xs:string" name="hostKey" maxOccurs="1" minOccurs="0"/>
+                <xs:element type="xs:string" name="channel" maxOccurs="1" minOccurs="1"/>
+                <xs:element ref="mapping" maxOccurs="unbounded" minOccurs="0">
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="mapping">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element type="xs:string" name="urlPattern"/>
+                <xs:element type="xs:string" name="keyPattern"/>
+                <xs:element type="xs:string" name="subchannel"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

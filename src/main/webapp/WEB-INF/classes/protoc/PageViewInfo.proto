@@ -1,0 +1,31 @@
+package com.howbuy.uac.protobuf;
+
+option java_outer_classname="ProtoBufPageView";
+
+message PageViewItem {
+	// 产品编号
+	optional string productId=1;
+	// 设备号
+	optional string tokenId=2;
+	// 交易客户号
+	optional string custNo=3;
+	// 页面ID 
+	optional string pageId=4;
+	// 页面级别
+	optional string plevel=5;
+	// 页面来源tag
+	optional string tag=6;
+	// url
+	optional string url=7;
+	// 基金代码
+	optional string pId=8;
+	// 网络环境
+	optional string network=9;
+	// 扩展信息
+	optional string ext=10;
+}
+
+message PageViewInfo {
+	// 每条Item
+	repeated PageViewItem pvItemArray=1;
+}

@@ -1,0 +1,16 @@
+YUI Compressor 是雅虎前端团队用 Java 开发制作的 JS/CSS 压缩工具。
+
+在前端代码压缩方面，使用最为广泛的要属 Douglas Crockford 的 JSMin  和 Dean Edwards 的 Packer。
+不过这些工具都有缺点，比如 JSMin 因为算法原因，压缩并不最佳。（ JSMin 算法较简单，必须在代码中保留很多换行符，否则会引入新Bug。）
+
+压缩 JavaScript 和 CSS 代码的目的始终是保持业务代码的质量，同时又降低相关文件的大小。
+相比其他工具，YUI Compressor 100% 安全，压缩比更高。在 YUI Library 的测试显示，YUI Compressor 比 JSMin 更节省超过 20% 的空间。
+YUI Compressor 同样可以用来压缩 CSS 文件。
+
+YUI Compressor 下载和使用方法，请见其主页：http://yui.github.io/yuicompressor/
+
+另外，YUI Compressor 这个工具是开源的，想了解其实现原理，可去看源码哦。
+
+官方网站：http://yui.github.io/yuicompressor/
+
+ex ：java -jar yuicompressor-2.4.8.jar h5_m.js -o min/h5_m_min.js --charset utf-8

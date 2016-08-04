@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Howbuy Click</title>
+    <style>
+        #container{
+            border:1px solid red;
+            width:350px;
+            height:200px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div>
+        <a href="http://testhowbuy.com:8080/uac/test.html" tag="1111"  target="_blank">第一个</a><br><br><br><br>
+    </div>
+</div>
+
+
+    <a href="http://testhowbuy.com:8080/uac/test2.html" tag="2222"  target="_blank">第二个</a><br><br><br><br>
+    <a href="http://testhowbuy.com:8080/uac/test3.html" tag="3333"  target="_blank">第三个</a><br><br><br><br>
+   
+    <input type="hidden" id="pageid" value="50004"/>
+    <input type="hidden" id="pagelevel" value="1"/>
+    <input type="hidden" id="proid" value="2"/>
+</body>
+<script src="./js/jquery.js"></script>
+<script src="./js/ha.js"></script>
+<script>
+(function () {
+	for(var i = 1; i<=100; i++){
+	var json = {phone:"133",type: "6",amount:"amount",fundCode: "fundCode",toFundCode: "toFundCode",cardNo:"cardNo",certType:"certType",certCode:"certCode",txRslt:"1",payType:"payType",custNo:"custNo",contractNo:"contractNo",phone: "phone",coopId:"coopId",actId: "actId",url:"http://www.howbuy.com/fund/000439/",appVol:"appVol"};
+	//var json = {phone:"133",type: "2",amount:"99"};
+	trackHowbuyUserAction(json);
+	//console.log(i);
+	}
+})();
+</script>
+</html>

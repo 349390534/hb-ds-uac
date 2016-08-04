@@ -1,0 +1,32 @@
+package com.howbuy.uac.protobuf;
+
+//option java_package="app.proto";
+//option java_outer_classname="AppActivate";
+
+message Activation {
+	// 产品编号
+	required string proid=1;
+	//设备号
+	required string imei=2;
+	// guid
+	required string guid=3;
+	// 网店号
+	required string outletcode=4;
+	//用户新启动客户端，填1；用户激活后台客户端，填2用户登录好买交易账户，填3；
+	required string type=5;
+	//客户号
+	optional string custno=6;
+	// 屏幕分辨率
+	optional string resolution=7;
+	// 设备基本参数
+	optional string agent=8;
+	// 设备版本号
+	required string version=9;
+	// 网络环境
+	required string network=10;
+	//应用版本
+	required string appversion=11;
+	// 扩展信息
+	optional string ext=12;
+	
+}

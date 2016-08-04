@@ -1,0 +1,1 @@
+native2ascii.exe -encoding utf-8 messages.prop messages_zh_CN.properties

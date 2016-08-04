@@ -1,0 +1,10 @@
+1:ha_base.js文件为基础主干文件，保证所有修改必须合并至当前文件
+2:全局变量_ha_proid值为平台号，默认网站，值参考/howbuy-uac/src/main/java/com/howbuy/uac/common/enums/ProidType.java
+3：全局变量rc_domain为cookie写入的域，当前需要上报的域有howbuy.com和ehowbuy.com,分别对应的cookie域为.howbuy.com,.ehowbuy.com
+默认为.howbuy.com,根据情况修改
+4：全局变量uac_path为pv上报path配置地址，根据情况配置
+5：全局变量uac_uapath为event上报path配置地址，根据情况配置
+6：全局变量uac_clickpath为click上报path配置地址，根据情况配置
+7：全局变量isUacTe，是uac上报host是否是交易网站,默认否,根据情况修改	
+注意！！！
+上线的时候需要修改的值有2,3,4,5,6,7变量！

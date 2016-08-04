@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urls>
+    <urlMapping><url>http://www.howbuy.com/</url><channel>website</channel><subchannel>index</subchannel></urlMapping>
+
+    <urlMapping><url>http://www.howbuy.com/register/register.htm</url><channel>register</channel><subchannel>register</subchannel></urlMapping>
+    <urlMapping><url>http://www.howbuy.com/login/login.htm</url><channel>login</channel><subchannel>login</subchannel></urlMapping>
+
+    <urlMapping><url>http://www.howbuy.com/fund/</url><channel>fund</channel><subchannel>index</subchannel></urlMapping>
+    <urlMapping><url>http://www.howbuy.com/fund/163005/*</url><channel>fund</channel><subchannel>detail</subchannel><key>163005</key></urlMapping>
+    <urlMapping><url>http://www.howbuy.com/fund/company/80000243/</url><channel>fund</channel><subchannel>company_detail</subchannel><key>80000243</key></urlMapping>
+    <urlMapping><url>http://www.howbuy.com/fund/manager/30071066/</url><channel>fund</channel><subchannel>manager_detail</subchannel><key>30071066</key></urlMapping>
+    <urlMapping><url>http://www.howbuy.com/fund/manager/</url><channel>fund</channel><subchannel>manager_list</subchannel></urlMapping>
+    <urlMapping><url>http://www.howbuy.com/fund/fundranking/</url><channel>fund</channel><subchannel>ranking</subchannel></urlMapping>
+    <urlMapping><url>http://www.howbuy.com/fund/fundanalysis/</url><channel>fund</channel><subchannel>analysis</subchannel></urlMapping>
+    <urlMapping><url>http://www.howbuy.com/fund/company/</url><channel>fund</channel><subchannel>company_list</subchannel></urlMapping>
+    <urlMapping><url>http://www.howbuy.com/fund/newissue/*</url><channel>fund</channel><subchannel>new_issue</subchannel></urlMapping>
+    <urlMapping><url>http://www.howbuy.com/fund/fundaip/* </url><channel>fund</channel><subchannel>aip</subchannel></urlMapping>
+
+    <urlMapping><url>http://www.howbuy.com/licai/</url><channel>licai</channel><subchannel>index</subchannel></urlMapping>
+    <urlMapping><url>http://www.howbuy.com/licai/list.htm</url><channel>licai</channel><subchannel>list</subchannel></urlMapping>
+    <urlMapping><url>http://www.howbuy.com/licai/list/1/</url><channel>licai</channel><subchannel>list</subchannel></urlMapping>
+    <urlMapping><url>http://www.howbuy.com/licai/news/511/</url><channel>licai</channel><subchannel>news</subchannel></urlMapping>
+    <urlMapping><url>http://www.howbuy.com/licai/news/list.htm</url><channel>licai</channel><subchannel>news</subchannel></urlMapping>
+    <urlMapping><url>http://www.howbuy.com/licai/product/Y0000017/</url><channel>licai</channel><subchannel>product</subchannel></urlMapping>
+
+    <urlMapping><url>http://www.howbuy.com/trust/</url><channel>trust</channel><subchannel>index</subchannel></urlMapping>
+    <urlMapping><url>http://www.howbuy.com/trust/trustcompany/80159184.htm</url><channel>trust</channel><subchannel>company</subchannel></urlMapping>
+    <urlMapping><url>http://www.howbuy.com/trust/list.htm</url><channel>trust</channel><subchannel>list</subchannel></urlMapping>
+    <urlMapping><url>http://www.howbuy.com/trust/T73019147.htm</url><channel>trust</channel><subchannel>product</subchannel></urlMapping>
+    <urlMapping><url>http://www.howbuy.com/trust/TG0000008.htm</url><channel>trust</channel><subchannel>product</subchannel></urlMapping>
+    <urlMapping><url>http://www.howbuy.com/trust/company.htm</url><channel>trust</channel><subchannel>company_list</subchannel></urlMapping>
+    <urlMapping><url>http://www.howbuy.com/trust/news.htm</url><channel>trust</channel><subchannel>news</subchannel></urlMapping>
+    <!--<urlMapping><url>http://www.howbuy.com/trust/basics.htm</url><channel>trust</channel><subchannel>basics</subchannel></urlMapping>-->
+
+    <urlMapping><url>http://www.howbuy.com/board/*</url><channel>fund</channel><subchannel>board</subchannel></urlMapping>
+
+    <urlMapping><url>http://www.howbuy.com/fundtool/filter.htm</url><channel>fundtool</channel><subchannel>filter</subchannel></urlMapping>
+    <urlMapping><url>http://www.howbuy.com/fundtool/zixuan.htm;jsessionid=341DC89AA6C4F8578C645A233074324A</url><channel>fundtool</channel><subchannel>zixuan</subchannel></urlMapping>
+    <urlMapping><url>http://www.howbuy.com/fundtool/zixuan.htm</url><channel>fundtool</channel><subchannel>zixuan</subchannel></urlMapping>
+    <urlMapping><url>http://www.howbuy.com/fundtool/licai.htm</url><channel>fundtool</channel><subchannel>licai</subchannel></urlMapping>
+
+    <urlMapping><url>http://www.howbuy.com/research/daily.htm</url><channel>research</channel><subchannel>daily</subchannel></urlMapping>
+    <urlMapping><url>http://www.howbuy.com/research/daily.htm?typeId=1</url><channel>research</channel><subchannel>daily</subchannel></urlMapping>
+    <urlMapping><url>http://www.howbuy.com/research/daily.htm?typeId=2</url><channel>research</channel><subchannel>daily</subchannel></urlMapping>
+    <urlMapping><url>http://www.howbuy.com/research/daily.htm?typeId=3</url><channel>research</channel><subchannel>daily</subchannel></urlMapping>
+    <urlMapping><url>http://www.howbuy.com/research/smreport.htm</url><channel>research</channel><subchannel>simu</subchannel></urlMapping>
+    <urlMapping><url>http://www.howbuy.com/research/trust.htm</url><channel>research</channel><subchannel>trust</subchannel></urlMapping>
+    <urlMapping><url>http://www.howbuy.com/research/interview.htm</url><channel>research</channel><subchannel>interview</subchannel></urlMapping>
+    <urlMapping><url>http://www.howbuy.com/research/licai.htm</url><channel>research</channel><subchannel>licai</subchannel></urlMapping>
+    <urlMapping><url>http://www.howbuy.com/research/guquan.htm</url><channel>research</channel><subchannel>guquan</subchannel></urlMapping>
+    <urlMapping><url>http://www.howbuy.com/research/duichong.htm</url><channel>research</channel><subchannel>duichong</subchannel></urlMapping>
+    <urlMapping><url>http://www.howbuy.com/research/hongguancelue.htm</url><channel>research</channel><subchannel>hongguancelue</subchannel></urlMapping>
+
+    <!--<urlMapping><url>http://www.howbuy.com/news/2013-01-25/1807591.html</url><channel>news</channel><subchannel>detail</subchannel><key>1807591</key></urlMapping>-->
+    <urlMapping><url>http://www.howbuy.com/news/*</url><channel>news</channel></urlMapping>
+
+    <urlMapping><url>http://www.howbuy.com/opinion/2013-01-28/36463.html</url><channel>opinion</channel><subchannel>detail</subchannel><key>36463</key></urlMapping>
+    <urlMapping><url>http://www.howbuy.com/zhlc/*</url><channel>zhlc</channel><subchannel>zhlc</subchannel></urlMapping>
+
+    <urlMapping><url>http://simu.howbuy.com/</url><channel>simu</channel><subchannel>index</subchannel></urlMapping>
+    <urlMapping><url>http://simu.howbuy.com/board.htm</url><channel>simu</channel><subchannel>board</subchannel></urlMapping>
+    <urlMapping><url>http://simu.howbuy.com/mboard.htm</url><channel>simu</channel><subchannel>mboard</subchannel></urlMapping>
+    <urlMapping><url>http://simu.howbuy.com/mlboard.htm</url><channel>simu</channel><subchannel>mlboard</subchannel></urlMapping>
+    <urlMapping><url>http://simu.howbuy.com/fundlist.htm</url><channel>simu</channel><subchannel>fund_list</subchannel></urlMapping>
+    <urlMapping><url>http://simu.howbuy.com/companylist.htm</url><channel>simu</channel><subchannel>company_list</subchannel></urlMapping>
+    <urlMapping><url>http://simu.howbuy.com/manager/index.htm</url><channel>simu</channel><subchannel>manager</subchannel></urlMapping>
+    <urlMapping><url>http://simu.howbuy.com/yhzcg.htm</url><channel>simu</channel><subchannel>zcg</subchannel></urlMapping>
+    <urlMapping><url>http://simu.howbuy.com/mboardold.htm</url><channel>simu</channel><subchannel>mboardold</subchannel></urlMapping>
+    <urlMapping><url>http://simu.howbuy.com/mlboardold.htm</url><channel>simu</channel><subchannel>mlboardold</subchannel></urlMapping>
+    <urlMapping><url>http://simu.howbuy.com/yinfan/P00873/(*)</url><channel>simu</channel><subchannel>detail</subchannel><key>P00873</key></urlMapping>
+    <!--<urlMapping><url>http://simu.howbuy.com/yinfan/</url><channel>simu</channel><subchannel>detail</subchannel></urlMapping>-->
+    <urlMapping><url>http://simu.howbuy.com/manager/80021632.htm</url><channel>simu</channel><subchannel>manager_detail</subchannel><key>80021632</key></urlMapping>l
+    <urlMapping><url>http://simu.howbuy.com/manager/80021632/*</url><channel>simu</channel><subchannel>manager_detail_sub</subchannel><key>80021632</key></urlMapping>
+    <urlMapping><url>http://simu.howbuy.com/manager/</url><channel>simu</channel><subchannel>manager</subchannel></urlMapping>
+    <urlMapping><url>http://simu.howbuy.com/company/</url><channel>simu</channel><subchannel>company_list</subchannel></urlMapping>
+    <urlMapping><url>http://simu.howbuy.com/shop/index.htm</url><channel>simu</channel><subchannel>shop</subchannel></urlMapping>
+
+
+    <urlMapping><url>http://simu.howbuy.test/xinwen/smrw/list.htm</url><channel>simu</channel><subchannel>simu_news</subchannel></urlMapping>
+
+
+    <urlMapping><url>http://www.howbuy.com/videodetail/10000301,84924244.html</url><channel>video</channel><subchannel>detail</subchannel></urlMapping>
+    <urlMapping><url>http://www.howbuy.com/video/channel.htm?type=1</url><channel>video</channel><subchannel>channel</subchannel></urlMapping>
+    <urlMapping><url>http://www.howbuy.com/video/</url><channel>video</channel><subchannel>index</subchannel></urlMapping>
+    <urlMapping><url>http://www.howbuy.com/video/searchVideos.htm?searchKey=fdfdf</url><channel>video</channel><subchannel>search</subchannel></urlMapping>
+    <urlMapping><url>http://www.howbuy.com/subject/nj2013/</url><channel>subject</channel><subchannel>subject</subchannel></urlMapping>
+</urls>

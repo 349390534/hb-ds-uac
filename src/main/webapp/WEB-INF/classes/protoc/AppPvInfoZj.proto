@@ -1,0 +1,32 @@
+package com.howbuy.uac.protobuf;
+//option java_package = "com.howbuy.uac.protobuf";
+message AppPvInfo{
+
+	/**pv数据对象**/
+	message PvInfo {
+		/**平台号*/
+		required string proid=1;
+		/**平台号*/
+		required string guid=2;
+		/**客户号*/
+		required string uid=3;
+		/**当前页面pageid*/
+		required string pageid=4;
+		/**当前页面的页面级别*/
+		required string plevel=5;
+		/**记录当前页面的来源信息*/
+		required string tag=6;
+		/**H5上报当前页面带参数的完整的url；app上报当前类名**/
+		required string url=7;
+		/**H5上报当前使用设备所在的网络环境**/
+		optional string network=8;
+		/**上报扩展信息**/
+		optional string ext=9;
+		/**基金代码*/
+		optional string fid=10;
+		/**请求时间,毫秒数*/
+		optional uint64 ts=11;
+	}
+	/**pv集合*/
+	repeated PvInfo pvInfoList=1;
+}

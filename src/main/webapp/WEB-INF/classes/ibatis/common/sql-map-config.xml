@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMapConfig PUBLIC "-//ibatis.apache.org//DTD SQL Map Config 2.0//EN"
+    "http://ibatis.apache.org/dtd/sql-map-config-2.dtd">
+
+<sqlMapConfig>
+	<settings cacheModelsEnabled="true" enhancementEnabled="true"
+		lazyLoadingEnabled="true" maxRequests="320" maxSessions="100"
+		maxTransactions="100" useStatementNamespaces="true" />
+
+
+	<!-- 渠道管理 -->
+	<sqlMap resource="ibatis/uac/sql-channelTag.xml" />
+	
+</sqlMapConfig>
+
